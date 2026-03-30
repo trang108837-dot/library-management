@@ -1,0 +1,16 @@
+/* frontend/src/index.css */
+:root {
+  --primary-color: #d70018; /* Màu đỏ chủ đạo */
+  --secondary-color: #fca500; /* Màu vàng */
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
