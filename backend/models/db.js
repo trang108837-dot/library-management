@@ -1,10 +1,18 @@
-const mysql = require("mysql2/promise");
+const mysql = require("mysql2");
 
-const db = mysql.createPool({
+const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "",
-  database: "library_db",
+  password: "", // ⚠️ XAMPP thường để trống
+  database: "library_db"
+});
+
+db.connect((err) => {
+  if (err) {
+    console.log("❌ Lỗi kết nối MySQL!");
+  } else {
+    console.log("✅ Kết nối MySQL thành công!");
+  }
 });
 
 module.exports = db;
